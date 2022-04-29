@@ -1,0 +1,23 @@
+movc r1 0x4
+movc r2 0x5
+movc r3 0x7
+movc r4 0xffffffff
+
+and r1 r2
+or r2 r3
+xor r1 r4
+
+movc r0 10
+movc r3 2
+movc r9 1
+movc r7 3
+
+sub r0 r9
+add r8 r7
+jmpg r3 -2
+
+movc r6 1
+movc r5 2
+
+
+

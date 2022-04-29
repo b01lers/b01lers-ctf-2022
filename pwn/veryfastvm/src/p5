@@ -1,0 +1,15 @@
+
+movfrom r0 0 r8
+jmpz 5 
+
+movfrom r7 2 r8 
+movc r1 12
+add r1 r2
+reset
+
+movc r2 33
+movfrom r5 0 r0 #clock increases by 1, since [0] is in cache (although its value is 0)
+movfrom r6 1 r0 #clock increases by 2, since [1] is not in cache
+
+
+

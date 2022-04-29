@@ -1,0 +1,11 @@
+version: "3.7"
+services:
+    search_and_rescue:
+        container_name: search_and_rescue
+        build:
+            dockerfile: ./deploy/Dockerfile
+            context: ../
+        logging:
+            driver: "json-file"
+        ports:
+            - "9304:1337"

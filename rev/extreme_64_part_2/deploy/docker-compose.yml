@@ -1,0 +1,10 @@
+version: "3.7"
+services:
+  extreme_64_part_2:
+    build:
+      dockerfile: ./deploy/Dockerfile
+      context: ../
+    logging:
+      driver: "json-file"
+    ports:
+      - "9302:1337"

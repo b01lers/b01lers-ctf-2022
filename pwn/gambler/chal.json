@@ -1,0 +1,17 @@
+{
+    "author": "robotearthpizza",
+    "description": "The Casino, but with a cool new feature!",
+    "difficulty": "Hard",
+    "flag": "flag{1_w4nn4_b3_th3_pr0_g4mb13r}",
+    "name": "gambler",
+    "ports": [
+        7779
+    ],
+    "provides": [
+        "dist/gambler_supreme",
+    ],
+    "remote": [
+        "cd deploy && docker-compose up --build --force-recreate"
+    ],
+    "type": "pwn"
+}

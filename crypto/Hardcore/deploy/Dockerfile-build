@@ -1,0 +1,21 @@
+FROM ubuntu:20.04
+
+# Install dependencies
+#RUN apt-get update
+#RUN apt-get install -y xinetd
+#RUN apt-get update
+#RUN apt-get install -y python3-pip
+
+# Change example to the name of your challenge.
+# Set up the user
+ENV USER Hardcore
+WORKDIR /home/$USER
+RUN useradd $USER
+
+# Add source files
+COPY ./src/* /home/$USER/
+
+RUN chown -R root:$USER /home/$USER
+RUN chmod -R 550 /home/$USER
+
+CMD sleep 5

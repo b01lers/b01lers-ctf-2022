@@ -1,0 +1,11 @@
+version: "3"
+services:
+  rust1:
+    container_name: rust1_container
+    build:
+      dockerfile: ./deploy/Dockerfile
+      context: ../
+    logging:
+      driver: "json-file"
+    ports:
+      - "9303:1337"

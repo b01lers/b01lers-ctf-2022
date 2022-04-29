@@ -1,0 +1,11 @@
+version: "3"
+services:
+    data_science-baby:
+        container_name: data_science-baby_container
+        build:
+            dockerfile: ./deploy/Dockerfile
+            context: ../
+        logging:
+            driver: "json-file"
+        ports:
+            - "9002:2001"

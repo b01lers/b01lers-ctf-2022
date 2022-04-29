@@ -1,0 +1,11 @@
+version: "3"
+services:
+    data_science:
+        container_name: data_science_container
+        build:
+            dockerfile: ./deploy/Dockerfile
+            context: ../
+        logging:
+            driver: "json-file"
+        ports:
+            - "9001:2001"

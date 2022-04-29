@@ -1,0 +1,2 @@
+Not the real flag, just here for your testing
+flag{}

@@ -1,0 +1,11 @@
+movc r1 0x10
+movc r2 0x11 #asd
+movc   r3 33
+mov r4 r3
+add r4 r3
+mul r4 r3
+jmp 1
+time
+
+
+

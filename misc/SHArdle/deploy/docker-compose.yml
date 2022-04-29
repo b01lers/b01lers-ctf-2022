@@ -1,0 +1,11 @@
+version: "3"
+services:
+    shardle:
+        container_name: shardle_container
+        build:
+            dockerfile: ./deploy/Dockerfile
+            context: ../
+        logging:
+            driver: "json-file"
+        ports:
+            - "9102:2001"

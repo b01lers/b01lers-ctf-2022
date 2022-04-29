@@ -1,0 +1,17 @@
+{
+    "author": "robotearthpizza",
+    "description": "Feeling luuuuuuuucky?",
+    "difficulty": "Easy",
+    "flag": "flag{0v3rfl0w_w1th0ut_5m45h1ng}",
+    "name": "gambler_overflow",
+    "ports": [
+        7778
+    ],
+    "provides": [
+        "dist/gambler_baby2",
+    ],
+    "remote": [
+        "cd deploy && docker-compose up --force-recreate"
+    ],
+    "type": "pwn"
+}

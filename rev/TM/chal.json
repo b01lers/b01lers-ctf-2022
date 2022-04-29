@@ -1,0 +1,15 @@
+{
+    "author": "robotearthpizza",
+    "description": "Guess who took theory of computation this semester...",
+    "difficulty": "Medium",
+    "flag": "bctf{tur1ng_m4_C_1n3}",
+    "name": "TM",
+    "ports": [
+        0
+    ],
+    "provides": [
+        "dist/tm"
+    ],
+    "remote": null,
+    "type": "rev"
+}

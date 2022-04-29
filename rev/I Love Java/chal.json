@@ -1,0 +1,15 @@
+{
+    "author": "TSBloxorz",
+    "description": "Can you Java?",
+    "difficulty": "Medium",
+    "flag": "bctf{J4V4_I$_th3_G04T}",
+    "name": "I Love Java",
+    "ports": [
+        0
+    ],
+    "provides": [
+        "dist/CrackMe.class"
+    ],
+    "remote": null,
+    "type": "rev"
+}

@@ -1,0 +1,11 @@
+version: "3.7"
+services:
+    gambler_supreme:
+        container_name: gambler_supreme
+        build:
+            dockerfile: ./deploy/Dockerfile
+            context: ../
+        logging:
+            driver: "json-file"
+        ports:
+            - "9201:1337"

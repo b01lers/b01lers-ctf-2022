@@ -1,0 +1,17 @@
+{
+    "author": "mtanghu",
+    "description": "A naive AI startup released a new visual password system based on State-of-the-Art Neural Network technology. Wanting to save on costs they reuse the popular Resnet model to create embeddings which input password images are checked against hoping to leverage the feature extraction capabilities of Resnet. Can you crack this visual password system?",
+    "difficulty": "Hard",
+    "flag": "bctf{8acKWa7d_Grad!ents?}",
+    "name": "resnet",
+    "ports": [
+        3001
+    ],
+    "provides": [
+        "dist/resnet_password.py"
+    ],
+    "remote": [
+        "3001"
+    ],
+    "type": "misc"
+}

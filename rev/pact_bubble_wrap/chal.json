@@ -1,0 +1,11 @@
+{
+  "author": "jrm0xE",
+  "description": "You look stressed, here's some bubble wrap to play with.",
+  "difficulty": "Hard",
+  "flag": "bctf{are_you_satisfied_with_this_vm}",
+  "name": "pact: Bubble Wrap",
+  "ports": [],
+  "provides": [ "pactvm" , "bubblewrap.pactb"],
+  "remote": [ ],
+  "type": "rev"
+}

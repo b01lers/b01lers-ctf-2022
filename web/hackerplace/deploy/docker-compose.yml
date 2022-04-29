@@ -1,0 +1,17 @@
+services:
+  place:
+    build:
+      dockerfile: ./deploy/Dockerfile_web
+      context: ../
+    logging:
+      driver: "json-file"
+    ports:
+      - "9401:3000"
+    volumes:
+      - ./canvas:/app/canvas
+  bot:
+    build:
+      dockerfile: ./deploy/Dockerfile_bot
+      context: ../
+    restart: always
+    

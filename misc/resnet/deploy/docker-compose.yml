@@ -1,0 +1,11 @@
+version: "3.7"
+services:
+    resnet:
+        container_name: resnet
+        build:
+            dockerfile: ./deploy/Dockerfile
+            context: ../
+        logging:
+            driver: "json-file"
+        ports:
+            - "9101:1337"

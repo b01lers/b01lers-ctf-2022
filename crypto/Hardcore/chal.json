@@ -1,0 +1,17 @@
+{
+    "author": "mtanghu",
+    "description": "GL!",
+    "difficulty": "Hard",
+    "flag": "bctf{do_you_like_hardcore_chals}",
+    "name": "Hardcore",
+    "ports": [
+        3000
+    ],
+    "provides": [
+        "dist/Hardcore.py"
+    ],
+    "remote": [
+        "3000"
+    ],
+    "type": "crypto"
+}

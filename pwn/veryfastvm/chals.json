@@ -1,0 +1,15 @@
+{
+    "author": "anton00b",
+    "description": "Just a Python VM. Someone could say that this challenge is more rev than pwn.",
+    "difficulty": "Medium",
+    "flag": "bctf{c4ching_is_v3ry_goodo}",
+    "name": "veryfastvm",
+    "ports": [
+        8641
+    ],
+    "provides": [
+        "dist/cpu.py"
+    ],
+    "remote": null,
+    "type": "pwn"
+}

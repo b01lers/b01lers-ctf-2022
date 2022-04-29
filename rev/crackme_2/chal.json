@@ -1,0 +1,14 @@
+{
+    "author": "novafacing",
+    "description": "Time for some basic algebra...",
+    "difficulty": "Easy",
+    "flag": "bctf{4lg3br4!}",
+    "name": "crackme_2",
+    "ports": [],
+    "provides": [
+        "dist/crackme_2"
+    ],
+    "remote": null,
+    "target": ".",
+    "type": "rev"
+}

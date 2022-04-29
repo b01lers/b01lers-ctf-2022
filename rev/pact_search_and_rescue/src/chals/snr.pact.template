@@ -1,0 +1,106 @@
+class Node {
+  init(v) {
+    this.l = nil;
+    this.r = nil;
+    this.v = v;
+    this.f = 0;
+  }
+}
+
+fun insert_in_order(head, val) {
+  var newNode = Node(val);
+  newNode.f = val.f;
+  if (head == nil) {
+    return newNode;
+  }
+
+  var cur = head;
+  while (cur.r != nil && cur.r.f < newNode.f) {
+    cur = cur.r;
+  }
+  newNode.r = cur.r;
+  cur.r = newNode;
+  return head;
+}
+
+fun build_tree(f) {
+  var list_head = nil;
+  for (var i = 0; i < len(f); i = i + 1) {
+    if (f[i] != 0) {
+      var new = Node(chr(i));
+      new.f = f[i];
+      list_head = insert_in_order(list_head, new);
+    }
+  }
+  while (list_head != nil && list_head.r != nil) {
+    var l = list_head.v;
+    list_head = list_head.r;
+    var r = list_head.v;
+    list_head = list_head.r;
+    var internal = Node(0);
+    internal.f = l.f + r.f;
+    internal.l = l;
+    internal.r = r;
+    list_head = insert_in_order(list_head, internal);
+  }
+  return list_head.v;
+}
+
+fun create_f() {
+  var f = alloc(256);
+
+  var num_f = $number_freqs;
+  var lwr_f = $lowercase_freqs;
+  var upr_f = $uppercase_freqs;
+
+  for(var i = ord("0"); i <= ord("9"); i = i + 1) {
+    f[i] = num_f[i - ord("0")];
+  }
+
+  for(var i = ord("a"); i <= ord("z"); i = i + 1) {
+    f[i] = lwr_f[i - ord("a")];
+  }
+
+  for(var i = ord("A"); i <= ord("Z"); i = i + 1) {
+    f[i] = upr_f[i - ord("A")];
+  }
+  f[ord("{")] = $open_brack_freq;
+  f[ord("}")] = $close_brack_freq;
+  f[ord("_")] = $underscore_freq;
+  return f;
+}
+// Get around the constant limit
+var q = create_f();
+var k = "$KEY_STR";
+var path = input("> ");
+var root = build_tree(q);
+var cur = root;
+var c = [];
+
+for (var i = 0; i < len(path); i = i + 1) {
+  var cur_char = ord(path[i]);
+  for (var j = 0; j < 8; j = j + 1) {
+    if (cur.l == nil && cur.r == nil) {
+      append(c, cur.v);
+      cur = root;
+    }
+    if ((cur_char & 1) == 1) {
+      cur = cur.r;
+    } else {
+      cur = cur.l;
+    }
+    cur_char = cur_char >> 1;
+  }
+}
+
+if (len(c) != len(k)) {
+  exit(1);
+}
+for(var i = 0; i < len(k); i = i + 1) {
+  if(c[i] != k[i]) {
+  print c[i];
+  print k[i];
+    exit(1);
+  }
+}
+exit(0);

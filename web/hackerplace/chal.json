@@ -1,0 +1,17 @@
+{
+    "author": "DJ",
+    "description": "hi",
+    "difficulty": "Medium",
+    "flag": "btcf{test}",
+    "name": "theplace",
+    "ports": [
+        8001
+    ],
+    "provides": [
+        "dist"
+    ],
+    "remote": [
+        "cd deploy && docker-compose --force-recreate --build up -d"
+    ],
+    "type": "web"
+}

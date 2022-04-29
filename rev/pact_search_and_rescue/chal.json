@@ -1,0 +1,15 @@
+{
+    "author": "jrm0xE",
+    "description": "Search for the flag through the forest. The server provides hex dumps of files runnable with the vm from bubble_wrap.",
+    "difficulty": "Hard",
+    "flag": "bctf{search_the_forest_through_the_trees}",
+    "name": "pact: Search and Rescue",
+    "ports": [
+        8520
+    ],
+    "provides": [ ],
+    "remote": [
+        "cd deploy && docker-compose up --build --force-recreate"
+    ],
+    "type": "rev"
+}

@@ -1,0 +1,11 @@
+version: "2.2"
+services:
+    veryfastvm:
+        container_name: veryfastvm
+        build:
+            dockerfile: ./deploy/Dockerfile
+            context: ../
+        logging:
+            driver: "json-file"
+        ports:
+            - "9204:1337"

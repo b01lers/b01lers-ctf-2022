@@ -1,0 +1,15 @@
+{
+    "author": "jrm0xE",
+    "description": "All this hype with web3, lets give web2 some love",
+    "difficulty": "Medium",
+    "flag": "bctf{sorry_no_nfts_only_flags}",
+    "name": "WEB2.0",
+    "ports": [
+        0
+    ],
+    "provides": [
+        "WEB2.0"
+    ],
+    "remote": null,
+    "type": "rev"
+}

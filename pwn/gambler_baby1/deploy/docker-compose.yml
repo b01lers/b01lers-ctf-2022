@@ -1,0 +1,11 @@
+version: "3.7"
+services:
+    gambler_rand:
+        container_name: gambler_rand
+        build:
+            dockerfile: ./deploy/Dockerfile
+            context: ../
+        logging:
+            driver: "json-file"
+        ports:
+            - "9202:1337"

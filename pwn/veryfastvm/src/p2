@@ -1,0 +1,16 @@
+movc r1 0x4
+movc r2 0x2
+movc r8 0x3
+movc r9 1
+
+mul r2 r8
+sub r1 r9
+mov r0 r1
+jmpz 2
+jmp -4
+
+halt
+movc r7 0x99
+
+
+

@@ -1,0 +1,18 @@
+{
+    "author": "novafacing",
+    "description": "Can you program in x86_64 assembly? Pass each level to get the flag.",
+    "difficulty": "Easy",
+    "flag": "bctf{c3rt1f13d_asm_pr0gr4mmer!!}",
+    "name": "extreme_64",
+    "ports": [
+        1337
+    ],
+    "provides": [
+        "dist/chal"
+    ],
+    "remote": [
+        "docker-compose --project_name extreme_64 up --build"
+    ],
+    "target": ".",
+    "type": "rev"
+}

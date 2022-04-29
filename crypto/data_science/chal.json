@@ -1,0 +1,15 @@
+{
+    "author": "dm",
+    "description": "Lies, damn lies, and ... A data scientist worth his/her salt can get almost any number out of a calculation. Can *you*?\n",
+    "difficulty": "Medium",
+    "flag": "bctf{NaN_to_int_is_s0me_pr3tty_fUnnY_bu5iness_1nd33d}",
+    "name": "Data Science",
+    "ports": [
+        25001
+    ],
+    "provides": [
+        "data_science-source.c"
+    ],
+    "remote": 25001,
+    "type": "crypto"
+}

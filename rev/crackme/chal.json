@@ -1,0 +1,14 @@
+{
+    "author": "novafacing",
+    "description": "Security through obscurity is no match for you!",
+    "difficulty": "Easy",
+    "flag": "bctf{133&_letmein_123}",
+    "name": "crackme",
+    "ports": [],
+    "provides": [
+        "dist/crackme"
+    ],
+    "remote": null,
+    "target": ".",
+    "type": "rev"
+}

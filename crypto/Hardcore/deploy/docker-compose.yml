@@ -1,0 +1,20 @@
+version: "3.7"
+services:
+    hardcore:
+        container_name: hardcore
+        build:
+            dockerfile: ./deploy/Dockerfile
+            context: ../
+        logging:
+            driver: "json-file"
+        ports:
+            - "9003:1337"
+    hardcore-build:
+        container_name: hardcore-build
+        build:
+            dockerfile: ./deploy/Dockerfile-build
+            context: ../
+        logging:
+            driver: "json-file"
+        volumes:
+            - ../dist:/home/Hardcore/build

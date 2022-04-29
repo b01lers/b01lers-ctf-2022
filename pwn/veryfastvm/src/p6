@@ -1,0 +1,21 @@
+movfrom r0 0 r8
+jmpz 7
+
+movfrom r0 0 r8 
+movfrom r1 1 r8
+movfrom r2 2 r8
+movfrom r3 3 r8
+
+magic
+reset
+
+movc r0 4000000000
+movc r1 4000000001
+movc r2 4000000002
+movc r3 4000000003
+magic
+
+
+
+
+

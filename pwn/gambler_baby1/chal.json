@@ -1,0 +1,17 @@
+{
+    "author": "robotearthpizza",
+    "description": "Feeling lucky?",
+    "difficulty": "Easy",
+    "flag": "flag{n0_pr4153_f0r_RNGesus}",
+    "name": "gambler_baby1",
+    "ports": [
+        7777
+    ],
+    "provides": [
+        "dist/gambler_baby1",
+    ],
+    "remote": [
+        "cd deploy && docker-compose up -- build --force-recreate"
+    ],
+    "type": "pwn"
+}

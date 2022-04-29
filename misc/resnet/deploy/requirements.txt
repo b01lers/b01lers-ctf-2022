@@ -1,0 +1,4 @@
+gitpython
+numpy
+torch
+torchvision

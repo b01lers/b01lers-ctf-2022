@@ -1,0 +1,17 @@
+movc r1 0x4
+movc r8 2
+movc r5 77
+movto r1 13 r0
+add r1 r8
+
+movfrom r2 18 r0
+movfrom r2 13 r0
+
+add r9 r8
+movto r5 10 r9
+movfrom r6 10 r9
+time
+movfrom r6 10 r9
+
+
+

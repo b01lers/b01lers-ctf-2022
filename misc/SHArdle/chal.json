@@ -1,0 +1,15 @@
+{
+    "author": "dm",
+    "description": "Five-letter words are for losers...\n(btw, color terminal advised)",
+    "difficulty": "Medium",
+    "flag": "bctf{Oh_n0_looks_l1ke_my_S3cRe7s_4re_out!}",
+    "name": "SHArdle",
+    "ports": [
+        25000
+    ],
+    "provides": [
+        "SHArdle.py"
+    ],
+    "remote": 25000,
+    "type": "misc"
+}

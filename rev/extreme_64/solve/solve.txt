@@ -1,0 +1,35 @@
+Level 1:
+mov rdi,0x1337
+
+Level 2:
+add rdi, rsi
+mov rax, rdi
+
+Level 3:
+cmp rax, 0x1000
+jne label1
+mov rsi, 0x10
+label1:
+nop
+
+Level 4:
+cmp rax, 0x1000
+jne label1
+mov rsi, 0x10
+jmp label2
+label1:
+cmp rax, 0x3000
+jne label2
+mov rsi, 0x20
+label2:
+nop
+
+Level 5:
+whileStart:
+cmp rax, 0x0
+jle whileExit
+add rsi, rax
+sub rax, 1
+jmp whileStart
+whileExit:
+nop
